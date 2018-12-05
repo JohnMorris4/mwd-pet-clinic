@@ -1,4 +1,4 @@
-package com.morrisje.mwdpetclinic;
+package mwdpetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

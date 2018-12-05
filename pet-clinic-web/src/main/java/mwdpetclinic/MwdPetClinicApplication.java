@@ -1,4 +1,4 @@
-package com.morrisje.mwdpetclinic;
+package mwdpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
