@@ -1,4 +1,4 @@
-package mwdpetclinic.model;
+package com.morrisje.mwdpetclinic.model;
 
 /**
  * Created by jmorris on 12/5/18
