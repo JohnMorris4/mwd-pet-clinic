@@ -4,7 +4,7 @@
 
     <groupId>com.morrisje</groupId>
     <artifactId>mwd-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -40,6 +40,9 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
         </plugins>
@@ -48,6 +51,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:JohnMorris4/mwd-pet-clinic.git</developerConnection>
-        <tag>mwd-pet-clinic-0.0.1</tag>
+        <tag>mwd-pet-clinic-0.0.2-SNAPSHOT</tag>
     </scm>
 </project>
