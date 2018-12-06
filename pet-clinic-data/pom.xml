@@ -3,7 +3,7 @@
     <parent>
         <artifactId>mwd-pet-clinic</artifactId>
         <groupId>com.morrisje</groupId>
-        <version>0.0.2</version>
+        <version>0.0.6-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
