@@ -3,7 +3,7 @@
     <parent>
         <artifactId>mwd-pet-clinic</artifactId>
         <groupId>com.morrisje</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,7 +13,7 @@
     <dependency>
         <groupId>com.morrisje</groupId>
         <artifactId>pet-clinic-data</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </dependency>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -38,6 +38,5 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
-
 </dependencies>
 </project>

@@ -4,11 +4,12 @@
 
     <groupId>com.morrisje</groupId>
     <artifactId>mwd-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
     </modules>
+
     <packaging>pom</packaging>
 
     <name>mwd-pet-clinic</name>
@@ -25,24 +26,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
+        <start-class>com.morrisje.mwdpetclinic.MwdPetClinicApplication</start-class>
     </properties>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
-                    <checkModificationExcludes>
-                        <checkModificationExclude>pom.xml</checkModificationExclude>
-                    </checkModificationExcludes>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
@@ -50,7 +47,6 @@
 
 
     <scm>
-        <developerConnection>scm:git:git@github.com:JohnMorris4/mwd-pet-clinic.git</developerConnection>
-        <tag>mwd-pet-clinic-0.0.2-SNAPSHOT</tag>
+        <developerConnection>scm:https://github.com/JohnMorris4/mwd-pet-clinic.git</developerConnection>
     </scm>
 </project>

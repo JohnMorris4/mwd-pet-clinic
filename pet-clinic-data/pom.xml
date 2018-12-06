@@ -3,12 +3,11 @@
     <parent>
         <artifactId>mwd-pet-clinic</artifactId>
         <groupId>com.morrisje</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-data</artifactId>
-
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
