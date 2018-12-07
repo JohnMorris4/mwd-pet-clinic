@@ -3,7 +3,7 @@ package com.morrisje.mwdpetclinic.model;
 /**
  * Created by jmorris on 12/5/18
  */
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
 
