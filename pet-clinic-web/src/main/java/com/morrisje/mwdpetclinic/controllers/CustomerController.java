@@ -6,11 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by jmorris on 12/8/18
  */
+@RequestMapping("/customers")
 @Controller
 public class CustomerController {
 
-    @RequestMapping({"/customers", "/customers/index", "/customers/index.html"})
+    @RequestMapping({"", "/", "/index", "/index.html"})
     public String listCustomers(){
+
         return "customers/index";
     }
 }

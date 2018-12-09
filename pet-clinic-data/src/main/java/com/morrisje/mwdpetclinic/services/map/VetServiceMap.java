@@ -1,14 +1,14 @@
 package com.morrisje.mwdpetclinic.services.map;
 
 import com.morrisje.mwdpetclinic.model.Vet;
-import com.morrisje.mwdpetclinic.services.CrudService;
+import com.morrisje.mwdpetclinic.services.VetService;
 
 import java.util.Set;
 
 /**
  * Created by jmorris on 12/7/18
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
