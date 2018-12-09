@@ -2,12 +2,14 @@ package com.morrisje.mwdpetclinic.services.map;
 
 import com.morrisje.mwdpetclinic.model.Vet;
 import com.morrisje.mwdpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by jmorris on 12/7/18
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
