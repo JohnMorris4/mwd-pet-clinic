@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by jmorris on 12/8/18
  */
-@RequestMapping("/customers")
+@RequestMapping("/owners")
 @Controller
-public class CustomerController {
+public class OwnersController {
 
     private final OwnerService ownerService;
 
-    public CustomerController(OwnerService ownerService) {
+    public OwnersController(OwnerService ownerService) {
         this.ownerService = ownerService;
     }
 
@@ -23,6 +23,6 @@ public class CustomerController {
     public String listCustomers(Model model){
 
         model.addAttribute("owners", ownerService.findAll());
-        return "customers/index";
+        return "owners/index";
     }
 }
