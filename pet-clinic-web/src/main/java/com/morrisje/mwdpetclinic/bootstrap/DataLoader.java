@@ -1,6 +1,7 @@
 package com.morrisje.mwdpetclinic.bootstrap;
 
 import com.morrisje.mwdpetclinic.model.Owner;
+import com.morrisje.mwdpetclinic.model.Pet;
 import com.morrisje.mwdpetclinic.model.PetType;
 import com.morrisje.mwdpetclinic.model.Vet;
 import com.morrisje.mwdpetclinic.services.OwnerService;
@@ -8,6 +9,8 @@ import com.morrisje.mwdpetclinic.services.PetTypeService;
 import com.morrisje.mwdpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 /**
  * Created by jmorris on 12/9/18
@@ -47,12 +50,36 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
+        owner1.setAddress("155 Elm Street");
+        owner1.setCity("Camden");
+        owner1.setState("SC");
+        owner1.setZipCode("29020");
+        owner1.setTelephone("(803) 285-1725");
+
+        Pet mikesPet = new Pet();
+        mikesPet.setPetType(saveDogType);
+        mikesPet.setOwner(owner1);
+        mikesPet.setBirthDate(LocalDate.now());
+        mikesPet.setName("Killer");
+        owner1.getPets().add(mikesPet);
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
-        owner2.setLastName("Glenanne");
+        owner2.setLastName("Michaelson");
+        owner2.setAddress("185 S. Lake Drive");
+        owner2.setCity("Ridgeway");
+        owner2.setState("SC");
+        owner2.setZipCode("29169");
+        owner2.setTelephone("(803) 753-1993");
+
+        Pet fionasPet = new Pet();
+        fionasPet.setPetType(saveCatType);
+        fionasPet.setOwner(owner2);
+        fionasPet.setBirthDate(LocalDate.now());
+        fionasPet.setName("Buffy");
+        owner2.getPets().add(fionasPet);
 
         ownerService.save(owner2);
 
