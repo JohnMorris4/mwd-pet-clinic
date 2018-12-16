@@ -15,5 +15,10 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping({"/error", "/oups"})
+    public String error(){
+        return "notimplemented";
+    }
+
 
 }
