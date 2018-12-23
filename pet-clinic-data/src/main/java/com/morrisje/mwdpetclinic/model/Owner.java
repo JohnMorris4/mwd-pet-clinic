@@ -17,8 +17,6 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-//@AllArgsConstructor
-
 @Entity
 @Table(name="owners")
 public class Owner extends Person {
